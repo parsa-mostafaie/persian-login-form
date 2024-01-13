@@ -1,0 +1,108 @@
+@font-face {
+    font-family: vazir;
+    src: url(Vazir.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: vazir;
+    color: rgb(64, 64, 64);
+    max-width: 100% !important;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.login-forms-parent{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 100px black;
+    padding: 5px;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+.login-side{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin:0 20px;
+}
+.login-side>p{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.input-title {
+    font-weight: bold;
+}
+.login-input{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.login-input-btn{
+    margin-top: 10px;
+}
+.login-input>input{
+    margin-top: 5px;
+    outline: 1px solid gray !important;
+    border: none;
+    width: 75%;
+    font-size: calc(1.5rem - 10px);
+    padding: 5px;
+    border-radius: 10px;
+    direction: ltr;
+}
+.login-input-btn>input[type="submit"]{
+    color: white;
+    background-color: purple;
+    width: auto;
+    outline: none !important;
+    padding: 10px 20px;
+    direction: ltr;
+    border: none;
+    font-size: calc(1.5rem - 10px);
+    border-radius: 10px;
+}
+.login-input-btn>input[type="submit"]:hover{
+    opacity: 0.9;
+}
+.form-sep{
+    display: none;
+    margin: 10px 0;
+}
+
+/* XSMALL */
+@media screen and (max-width: 575px) {
+    .login-input{
+        width: auto;
+    }
+}
+
+/* SMALL */
+@media screen and (max-width: 767px){
+    .login-forms-parent{
+        flex-direction: column;
+    }
+    .form-sep{
+        display: block;
+    }
+    .input-title{
+        text-align: center;
+    }
+    .login-side{
+        align-items: center;
+        margin: 0;
+    }
+    .login-input{
+        align-items: center;
+    }
+    .login-input>input{
+        width: 100%;
+    }
+    .login-input{
+        width: 50%;
+    }
+}
