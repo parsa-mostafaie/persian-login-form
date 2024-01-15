@@ -12,9 +12,17 @@
   direction: rtl;
 }
 
+body{
+  background-color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .container {
   width: 80%;
-  margin: 0 auto;
+  background-color: white;
 }
 
 .login-forms-parent {
